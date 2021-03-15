@@ -1,0 +1,396 @@
+$white: #fffaf2;
+$black: #333333;
+$color1: #fffaf2;
+$color2: #c66c49;
+$color3: #f5d6ab;
+$color4: #8b4136;
+@mixin font($font-weight, $font-size, $line-height, $color) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+@mixin size($height, $width, $bgcolor) {
+  max-height: $height;
+  max-width: $width;
+  background-color: $bgcolor;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+header {
+  .container {
+    max-width: 1440px;
+    background-color: $color2;
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 93px 165px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 145px;
+      .logo {
+        @include font(700, 24px, 29px, $white);
+        cursor: pointer;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          @include font(400, 18px, 22px, $white);
+          list-style: none;
+          cursor: pointer;
+        }
+        li + li {
+          margin-left: 59px;
+        }
+        .active {
+          font-weight: bold;
+        }
+      }
+    }
+    .heading {
+      .heading1 {
+        @include font(400, 64px, 78px, $white);
+        margin-bottom: 26px;
+      }
+      .heading2 {
+        @include font(400, 24px, 29px, $white);
+        margin-bottom: 106px;
+      }
+      .heading3 {
+        @include font(400, 18px, 22px, $white);
+        text-decoration-line: underline;
+        color: $white;
+        margin-bottom: 240px;
+      }
+    }
+  }
+}
+.about {
+  .container {
+    max-width: 1440px;
+    padding: 93px 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .heading1 {
+      @include font(700, 24px, 29px, $black);
+      margin-bottom: 76px;
+    }
+    .heading2 {
+      @include font(400, 18px, 30px, $black);
+      text-align: justify;
+      min-height: 231px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+.skills {
+  .container {
+    max-width: 1440px;
+    padding: 93px 165px;
+    background-color: $color1;
+  }
+  .heading {
+    @include font(700, 24px, 29px, $black);
+    margin-bottom: 86px;
+  }
+  .img {
+    img {
+      width: 100%;
+      background-color: $color2;
+    }
+  }
+  .headings {
+    padding-left: 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include font(600, 18px, 25px, $black);
+    p:first-child {
+      margin-bottom: 65px;
+    }
+  }
+  .headings1 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include font(400, 18px, 25px, $black);
+    p:first-child {
+      margin-bottom: 65px;
+    }
+    .ux {
+      width: 100%;
+      height: 24px;
+      display: flex;
+      margin-bottom: 16px;
+      div:first-child {
+        height: 24px;
+        width: 80%;
+        background-color: $color4;
+      }
+      div:last-child {
+        height: 24px;
+        width: 20%;
+        background-color: $color3;
+      }
+    }
+    .ui {
+      width: 100%;
+      height: 24px;
+      display: flex;
+      margin-bottom: 16px;
+      div:first-child {
+        height: 24px;
+        width: 70%;
+        background-color: $color4;
+      }
+      div:last-child {
+        height: 24px;
+        width: 30%;
+        background-color: $color3;
+      }
+    }
+    .developer {
+      width: 100%;
+      height: 24px;
+      display: flex;
+      margin-bottom: 16px;
+      div:first-child {
+        height: 24px;
+        width: 60%;
+        background-color: $color4;
+      }
+      div:last-child {
+        height: 24px;
+        width: 40%;
+        background-color: $color3;
+      }
+    }
+  }
+}
+.portfolio {
+  .container {
+    max-width: 1440px;
+    padding: 93px 165px;
+    .heading {
+      @include font(700, 24px, 29px, $black);
+      margin-bottom: 86px;
+    }
+    .row {
+      .text {
+        @include font(600, 18px, 25px, $black);
+        margin-bottom: 48px;
+      }
+      .text1 {
+        @include font(400, 18px, 30px, $black);
+        text-align: justify;
+      }
+      .images {
+        padding: 0;
+        margin-left: 0;
+        .right,
+        .left {
+          padding: 0;
+          .img1 {
+            @include size(144px, 100%, $color4);
+            margin-bottom: 26px;
+          }
+          .img3 {
+            @include size(233px, 100%, $color4);
+          }
+          .img2 {
+            @include size(233px, 100%, $color4);
+            margin-bottom: 26px;
+          }
+          .img4 {
+            @include size(144px, 100%, $color4);
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  .container {
+    max-width: 1440px;
+    padding: 93px 165px;
+    background-color: $white;
+    .heading {
+      @include font(700, 24px, 29px, $black);
+      margin-bottom: 51px;
+    }
+    p {
+      @include font(400, 18px, 22px, $black);
+    }
+  }
+}
+@media (max-width: 374px) {
+  header {
+    .container {
+      height: 275px;
+      padding: 39px 34px 50px;
+
+      .header {
+        flex-direction: row-reverse;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 50px;
+        nav {
+          height: 24px;
+          width: 24px;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading1 {
+          @include font(400, 20px, 24px, $white);
+          margin-bottom: 13px;
+        }
+        .heading2 {
+          @include font(400, 13px, 16px, $white);
+          margin-bottom: 41px;
+        }
+        .heading3 {
+          @include font(400, 13px, 16px, $white);
+        }
+      }
+    }
+  }
+  .about {
+    .container {
+      padding: 25px 34px;
+      .heading1 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 19px;
+      }
+      .heading2 {
+        @include font(400, 12px, 14.5px, $black);
+      }
+    }
+  }
+
+  .skills {
+    .container {
+      padding: 25px 0;
+      .heading {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .row {
+        justify-content: center;
+        padding: 0 34px;
+        .img {
+          max-width: 224px;
+          max-height: 218px;
+          margin-bottom: 26px;
+        }
+        .headings {
+          padding: 0;
+          @include font(600, 12px, 25px, $black);
+          p {
+            margin-bottom: 0px;
+          }
+          p:first-child {
+            margin-bottom: 31px;
+          }
+        }
+        .headings1 {
+          padding: 0;
+          @include font(400, 12px, 25px, $black);
+          p {
+            margin-bottom: 13px;
+          }
+          p:first-child {
+            margin-bottom: 45px;
+          }
+          p:last-child {
+            margin-bottom: 0;
+          }
+          .ux {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    .container {
+      padding: 25px 34px;
+      .heading {
+        margin-bottom: 19px;
+        text-align: center;
+      }
+      .row {
+        text-align: center;
+        .text {
+          @include font(500, 14px, 25px, $black);
+          margin-bottom: 15px;
+        }
+        .text1 {
+          @include font(400, 12px, 14.5px, $black);
+          text-align: center;
+        }
+        .images {
+          padding: 0;
+          margin-left: 0;
+          .right,
+          .left {
+            padding: 0;
+            .img1 {
+              @include size(70px, 100%, $color4);
+              margin-bottom: 12px;
+            }
+            .img3 {
+              @include size(115px, 100%, $color4);
+            }
+            .img2 {
+              @include size(115px, 100%, $color4);
+              margin-bottom: 12px;
+            }
+            .img4 {
+              @include size(70px, 100%, $color4);
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      padding: 26px 42px;
+      .heading {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+      p {
+        @include font(400, 14px, 17px, $black);
+      }
+      .row {
+        div:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

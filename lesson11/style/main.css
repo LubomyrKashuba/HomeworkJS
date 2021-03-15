@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif; }
+
+header .container {
+  max-width: 1440px;
+  background-color: #c66c49;
+  background-image: url(/img/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 93px 165px; }
+  header .container .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px; }
+    header .container .header .logo {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #fffaf2;
+      cursor: pointer; }
+    header .container .header ul {
+      display: flex;
+      justify-content: space-between; }
+      header .container .header ul li {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fffaf2;
+        list-style: none;
+        cursor: pointer; }
+      header .container .header ul li + li {
+        margin-left: 59px; }
+      header .container .header ul .active {
+        font-weight: bold; }
+  header .container .heading .heading1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 78px;
+    color: #fffaf2;
+    margin-bottom: 26px; }
+  header .container .heading .heading2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fffaf2;
+    margin-bottom: 106px; }
+  header .container .heading .heading3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fffaf2;
+    text-decoration-line: underline;
+    color: #fffaf2;
+    margin-bottom: 240px; }
+
+.about .container {
+  max-width: 1440px;
+  padding: 93px 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .about .container .heading1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 76px; }
+  .about .container .heading2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    text-align: justify;
+    min-height: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.skills .container {
+  max-width: 1440px;
+  padding: 93px 165px;
+  background-color: #fffaf2; }
+.skills .heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  margin-bottom: 86px; }
+.skills .img img {
+  width: 100%;
+  background-color: #c66c49; }
+.skills .headings {
+  padding-left: 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333; }
+  .skills .headings p:first-child {
+    margin-bottom: 65px; }
+.skills .headings1 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333; }
+  .skills .headings1 p:first-child {
+    margin-bottom: 65px; }
+  .skills .headings1 .ux {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    margin-bottom: 16px; }
+    .skills .headings1 .ux div:first-child {
+      height: 24px;
+      width: 80%;
+      background-color: #8b4136; }
+    .skills .headings1 .ux div:last-child {
+      height: 24px;
+      width: 20%;
+      background-color: #f5d6ab; }
+  .skills .headings1 .ui {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    margin-bottom: 16px; }
+    .skills .headings1 .ui div:first-child {
+      height: 24px;
+      width: 70%;
+      background-color: #8b4136; }
+    .skills .headings1 .ui div:last-child {
+      height: 24px;
+      width: 30%;
+      background-color: #f5d6ab; }
+  .skills .headings1 .developer {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    margin-bottom: 16px; }
+    .skills .headings1 .developer div:first-child {
+      height: 24px;
+      width: 60%;
+      background-color: #8b4136; }
+    .skills .headings1 .developer div:last-child {
+      height: 24px;
+      width: 40%;
+      background-color: #f5d6ab; }
+
+.portfolio .container {
+  max-width: 1440px;
+  padding: 93px 165px; }
+  .portfolio .container .heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 86px; }
+  .portfolio .container .row .text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 48px; }
+  .portfolio .container .row .text1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    text-align: justify; }
+  .portfolio .container .row .images {
+    padding: 0;
+    margin-left: 0; }
+    .portfolio .container .row .images .right,
+    .portfolio .container .row .images .left {
+      padding: 0; }
+      .portfolio .container .row .images .right .img1,
+      .portfolio .container .row .images .left .img1 {
+        max-height: 144px;
+        max-width: 100%;
+        background-color: #8b4136;
+        margin-bottom: 26px; }
+      .portfolio .container .row .images .right .img3,
+      .portfolio .container .row .images .left .img3 {
+        max-height: 233px;
+        max-width: 100%;
+        background-color: #8b4136; }
+      .portfolio .container .row .images .right .img2,
+      .portfolio .container .row .images .left .img2 {
+        max-height: 233px;
+        max-width: 100%;
+        background-color: #8b4136;
+        margin-bottom: 26px; }
+      .portfolio .container .row .images .right .img4,
+      .portfolio .container .row .images .left .img4 {
+        max-height: 144px;
+        max-width: 100%;
+        background-color: #8b4136; }
+
+footer .container {
+  max-width: 1440px;
+  padding: 93px 165px;
+  background-color: #fffaf2; }
+  footer .container .heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 51px; }
+  footer .container p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333; }
+
+@media (max-width: 374px) {
+  header .container {
+    height: 275px;
+    padding: 39px 34px 50px; }
+    header .container .header {
+      flex-direction: row-reverse;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 50px; }
+      header .container .header nav {
+        height: 24px;
+        width: 24px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0; }
+    header .container .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      header .container .heading .heading1 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fffaf2;
+        margin-bottom: 13px; }
+      header .container .heading .heading2 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fffaf2;
+        margin-bottom: 41px; }
+      header .container .heading .heading3 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fffaf2; }
+
+  .about .container {
+    padding: 25px 34px; }
+    .about .container .heading1 {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 19px; }
+    .about .container .heading2 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14.5px;
+      color: #333333; }
+
+  .skills .container {
+    padding: 25px 0; }
+    .skills .container .heading {
+      text-align: center;
+      margin-bottom: 25px; }
+    .skills .container .row {
+      justify-content: center;
+      padding: 0 34px; }
+      .skills .container .row .img {
+        max-width: 224px;
+        max-height: 218px;
+        margin-bottom: 26px; }
+      .skills .container .row .headings {
+        padding: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 25px;
+        color: #333333; }
+        .skills .container .row .headings p {
+          margin-bottom: 0px; }
+        .skills .container .row .headings p:first-child {
+          margin-bottom: 31px; }
+      .skills .container .row .headings1 {
+        padding: 0;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        color: #333333; }
+        .skills .container .row .headings1 p {
+          margin-bottom: 13px; }
+        .skills .container .row .headings1 p:first-child {
+          margin-bottom: 45px; }
+        .skills .container .row .headings1 p:last-child {
+          margin-bottom: 0; }
+        .skills .container .row .headings1 .ux {
+          margin-bottom: 16px; }
+
+  .portfolio .container {
+    padding: 25px 34px; }
+    .portfolio .container .heading {
+      margin-bottom: 19px;
+      text-align: center; }
+    .portfolio .container .row {
+      text-align: center; }
+      .portfolio .container .row .text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        color: #333333;
+        margin-bottom: 15px; }
+      .portfolio .container .row .text1 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.5px;
+        color: #333333;
+        text-align: center; }
+      .portfolio .container .row .images {
+        padding: 0;
+        margin-left: 0; }
+        .portfolio .container .row .images .right,
+        .portfolio .container .row .images .left {
+          padding: 0; }
+          .portfolio .container .row .images .right .img1,
+          .portfolio .container .row .images .left .img1 {
+            max-height: 70px;
+            max-width: 100%;
+            background-color: #8b4136;
+            margin-bottom: 12px; }
+          .portfolio .container .row .images .right .img3,
+          .portfolio .container .row .images .left .img3 {
+            max-height: 115px;
+            max-width: 100%;
+            background-color: #8b4136; }
+          .portfolio .container .row .images .right .img2,
+          .portfolio .container .row .images .left .img2 {
+            max-height: 115px;
+            max-width: 100%;
+            background-color: #8b4136;
+            margin-bottom: 12px; }
+          .portfolio .container .row .images .right .img4,
+          .portfolio .container .row .images .left .img4 {
+            max-height: 70px;
+            max-width: 100%;
+            background-color: #8b4136; }
+
+  footer .container {
+    padding: 26px 42px; }
+    footer .container .heading {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 25px; }
+    footer .container p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #333333; }
+    footer .container .row div:first-child {
+      margin-bottom: 30px; } }
+
+/*# sourceMappingURL=main.css.map */

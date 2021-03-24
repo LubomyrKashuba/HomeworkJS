@@ -26,4 +26,4 @@ const f = (a, b) => {
 // const q = prompt("enter the first number");
 // const d = prompt("enter the second number");
 
-f(14, 25);
+f(q, d);

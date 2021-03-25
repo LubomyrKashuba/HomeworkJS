@@ -48,4 +48,4 @@ let getMath = {
   },
 };
 
-console.log(getMath.min(2, 5, -11, 45));
+console.log(getMath.min('b',2, 5, -11, 45));

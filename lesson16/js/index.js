@@ -120,7 +120,7 @@ let widthTd = document.querySelector("#width");
 let widthBorder = document.querySelector("#wborder");
 
 let f7 = document.forms.f7;
-let typeBorder;
+let typeBorder = f7.type.options[0].value;
 f7.type.onchange = function () {
   for (let i = 0; i < f7.type.options.length; i++) {
     if (f7.type.options[i].selected) {
@@ -129,8 +129,9 @@ f7.type.onchange = function () {
   }
 };
 
-let colorBorder;
+let colorBorder = f7.borderColor.options[0].value;
 f7.borderColor.onchange = function () {
+  colorBorder = this.value;
   for (let i = 0; i < f7.borderColor.options.length; i++) {
     if (f7.borderColor.options[i].selected) {
       colorBorder = this.value;
@@ -171,7 +172,7 @@ f4[1].onclick = function () {
 let f8 = document.forms.f8;
 let countList = document.querySelector("#li");
 
-let listMark;
+let listMark = f8.marks.options[0].value;
 f8.marks.onchange = function () {
   for (let i = 0; i < f8.marks.options.length; i++) {
     if (f8.marks.options[i].selected) {

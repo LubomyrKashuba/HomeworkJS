@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+.box,
+#box1 {
+  background-color: black;
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 2px;
+}
+
+.one {
+  background-color: violet;
+}
+.two {
+  background-color: yellow;
+}
+.three {
+  background-color: turquoise;
+}
+.four {
+  background-color: tomato;
+}
+.five {
+  background-color: #0a043c;
+}
+.six {
+  background-color: #03506f;
+}
+.seven {
+  background-color: #a3ddcb;
+}
+.eight {
+  background-color: #ffe3de;
+}
+.nine {
+  background-color: #ffb037;
+}
+
+#img1 {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img2 {
+  background-image: url(../img/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img3 {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img4 {
+  background-image: url(../img/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img5 {
+  background-image: url(../img/5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img6 {
+  background-image: url(../img/6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img7 {
+  background-image: url(../img/7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img8 {
+  background-image: url(../img/8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#img9 {
+  background-image: url(../img/9.jpg);
+  background-size: cover;
+  background-position: center;
+}

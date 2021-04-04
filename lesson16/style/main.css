@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  /* height: 250px; */
+  width: 70%;
+  background-color: rgb(226, 226, 226);
+  padding-left: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.mid {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.bot {
+  height: 350px;
+  width: 70%;
+  background-color: rgb(226, 226, 226);
+  padding: 30px;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.bot-edit {
+  visibility: hidden;
+}
+.bot-style {
+  visibility: hidden;
+  position: absolute;
+  left: 35px;
+  top: 15px;
+  width: 90%;
+}
+textarea {
+  height: 200px;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  /* visibility: hidden; */
+}
+textarea:focus {
+  outline: 2px solid rgb(61, 120, 209);
+}
+input {
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+  width: 85%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+input:focus {
+  border-radius: 5px;
+  border: 3px solid rgb(61, 120, 209);
+  outline: none;
+}
+input[type="radio"] {
+  transform: scale(1.9);
+  width: 30px;
+  height: 10px;
+  margin: 0;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+  height: 15px;
+  width: 25px;
+}
+.mid button:first-child {
+  height: 50px;
+  width: 75px;
+  background-color: yellow;
+  outline: none;
+  border-radius: 10px;
+  color: black;
+}
+.mid button:last-child {
+  height: 50px;
+  width: 75px;
+  background-color: rgb(61, 120, 209);
+  outline: none;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.add {
+  height: 50px;
+  width: 75px;
+  background-color: rgb(190, 36, 36);
+  outline: none;
+
+  border-radius: 10px;
+  /* visibility: hidden; */
+}
+.save {
+  height: 50px;
+  width: 75px;
+  background-color: rgb(36, 160, 57);
+  outline: none;
+  border-radius: 10px;
+  margin-left: 20px;
+  /* visibility: hidden; */
+}
+select {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+}
+.bot-style p {
+  font-size: 17px;
+  font-weight: bold;
+}
+.color-text {
+  height: 30px;
+  width: 120px;
+  background-color: rgb(73, 73, 73);
+  border-radius: 5px;
+  color: white;
+}
+.bg-color {
+  height: 30px;
+  width: 120px;
+  background-color: rgb(73, 73, 73);
+  border-radius: 5px;
+  color: white;
+}
+select:focus {
+  outline: none;
+  border: 3px solid rgb(61, 120, 209);
+}
+.colors {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+.text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+.one {
+  background-color: violet;
+}
+.two {
+  background-color: yellow;
+}
+.three {
+  background-color: turquoise;
+}
+.four {
+  background-color: tomato;
+}
+.five {
+  background-color: #0a043c;
+}
+.six {
+  background-color: #03506f;
+}
+.seven {
+  background-color: #a3ddcb;
+}
+.eight {
+  background-color: #ffe3de;
+}
+.nine {
+  background-color: #ffb037;
+}
+
+#add {
+  width: 70%;
+  height: 300px;
+  background-color: rgb(226, 226, 226);
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  padding: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: large;
+}
+.table {
+  visibility: hidden;
+}
+form[name="f4"] {
+  margin-bottom: 30px;
+}
+form[name="f5"] {
+  display: flex;
+  justify-content: space-between;
+}
+form[name="f6"] {
+  display: flex;
+  justify-content: space-between;
+}
+form[name="f7"] {
+  display: flex;
+  justify-content: space-between;
+}
+form[name="f7"] div {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.part1 div {
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  padding-top: 10px;
+}
+
+#wborder {
+  width: 30%;
+}
+#type {
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+}
+#borderColor {
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+}
+.list {
+  position: absolute;
+  top: 180px;
+  left: 40px;
+  width: 92%;
+  visibility: hidden;
+}
+form[name="f8"] div {
+  display: flex;
+  justify-content: space-between;
+}
+#marks {
+  width: 85%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.create-table,
+.create-list {
+  background-color: rgb(36, 160, 57);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+button {
+  color: white;
+  border: none;
+}
+select {
+  padding-left: 15px;
+}

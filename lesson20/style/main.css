@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  display: flex;
+}
+.inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10%;
+}
+.table {
+  width: 50%;
+  padding: 5% 0;
+}
+input {
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 185, 185);
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #408ee0;
+}
+label {
+  margin-bottom: 10px;
+}
+.add {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(41, 148, 41);
+  color: rgb(52, 180, 52);
+  margin-top: 5px;
+}
+.add:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgb(52, 180, 52);
+}
+.add:hover {
+  background-color: rgb(41, 148, 41);
+  color: white;
+}
+table {
+  table-layout: auto;
+  width: 700px;
+}
+table,
+tr,
+td {
+  border-collapse: collapse;
+}
+thead tr {
+  height: 50px;
+  border-top: 1px solid rgb(185, 185, 185);
+  border-bottom: 3px solid rgb(185, 185, 185);
+}
+tbody tr {
+  text-align: center;
+  height: 50px;
+  color: rgb(82, 82, 82);
+}
+td {
+  margin: 0 auto;
+}
+.edit {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(255, 166, 0);
+  color: black;
+  border: none;
+}
+.delete {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e44061;
+  color: white;
+  border: none;
+}
+.editUser {
+  display: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(41, 148, 41);
+  color: rgb(52, 180, 52);
+}
+.editUser:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgb(52, 180, 52);
+}
+.editUser:hover {
+  background-color: rgb(41, 148, 41);
+  color: white;
+}
+.firstName,
+.email,
+.password {
+  padding: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e44061;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+  display: none;
+  margin-top: -18px;
+}
